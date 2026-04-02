@@ -1,8 +1,12 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY as string });
-
 export const extractProfileFromResume = async (fileBase64: string, mimeType: string) => {
+  const apiKey = process.env.GEMINI_API_KEY as string;
+  if (!apiKey) {
+    console.error("GEMINI_API_KEY is not set.");
+    return null;
+  }
+  const ai = new GoogleGenAI({ apiKey });
   const response = await ai.models.generateContent({
     model: "gemini-3-flash-preview",
     contents: [
