@@ -1,20 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🌐 Goutam Kumar Ghosal – Portfolio
 
-# Run and deploy your AI Studio app
+Welcome to my personal portfolio website!  
+This project showcases my skills, projects, and experience as a **B.Tech CSE student at IIT Patna**.
 
-This contains everything you need to run your app locally.
+🔗 **Live Website:** https://goutam-s-portfolio.vercel.app *(update if needed)*  
+📂 **GitHub Repo:** https://github.com/Goutam-2702/Goutam-s-portfolio  
 
-View your app in AI Studio: https://ai.studio/apps/3bdbbbd6-7fed-4d78-881d-bf45d4c18305
+---
 
-## Run Locally
+## 🚀 About Me
 
-**Prerequisites:**  Node.js
+I am a Computer Science student passionate about:
+- Full Stack Development  
+- Artificial Intelligence & Machine Learning  
+- Building real-world impactful projects  
 
+I enjoy solving problems, participating in hackathons, and creating scalable applications.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React.js  
+- Tailwind CSS  
+- JavaScript (ES6+)  
+
+**Tools & Platforms**
+- Git & GitHub  
+- Vercel (Deployment)  
+- VS Code  
+
+---
+
+## 📌 Features
+
+- ✨ Modern and responsive UI  
+- 🌙 Clean design with smooth user experience  
+- 📱 Fully responsive (mobile + desktop)  
+- 📂 Project showcase section  
+- 📄 Resume download option  
+- 📬 Contact section  
+
+---
+
+## 📁 Project Structure
