@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "A portfolio project",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "githubUrl": { "type": "string" },
+        "liveUrl": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["title", "description", "order"]
+    },
+    "Achievement": {
+      "title": "Achievement",
+      "description": "A hackathon, certification, or internship",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "date": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "type": { "type": "string", "enum": ["hackathon", "certification", "internship"] }
+      },
+      "required": ["title", "description", "date", "type"]
+    },
+    "Certificate": {
+      "title": "Certificate",
+      "description": "A certification image",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "date": { "type": "string" }
+      },
+      "required": ["title", "imageUrl"]
+    },
+    "Profile": {
+      "title": "Profile",
+      "description": "Personal information",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "tagline": { "type": "string" },
+        "intro": { "type": "string" },
+        "resumeUrl": { "type": "string" },
+        "skills": { "type": "array", "items": { "type": "string" } },
+        "education": { "type": "array", "items": { "type": "object", "properties": { "institution": { "type": "string" }, "degree": { "type": "string" }, "year": { "type": "string" } } } }
+      }
+    }
+  },
+  "firestore": {
+    "/projects": { "schema": "Project", "description": "List of projects" },
+    "/achievements": { "schema": "Achievement", "description": "List of achievements" },
+    "/certificates": { "schema": "Certificate", "description": "List of certificates" },
+    "/profile/main": { "schema": "Profile", "description": "Main profile data" }
+  }
+}
